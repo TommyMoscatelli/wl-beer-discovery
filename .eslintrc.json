@@ -29,7 +29,7 @@
         "@typescript-eslint/ban-ts-comment": "off",
         "react/react-in-jsx-scope": ["off"],
         "react/jsx-uses-react": ["off"],
-        "react/jsx-props-no-spreading": ["warn"],
+        "react/jsx-props-no-spreading": ["off"],
         "react/no-unescaped-entities": ["off"],
         "react/require-default-props" : 0
     }

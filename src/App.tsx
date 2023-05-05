@@ -32,7 +32,7 @@ function App() {
 
   return (
     <motion.div
-      className="h-screen max-w-2xl mx-auto"
+      className="h-screen max-w-2xl mx-auto relative"
       key={pathname}
       initial="initial"
       animate="in"

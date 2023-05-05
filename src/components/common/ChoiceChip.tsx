@@ -11,7 +11,7 @@ export default function ChoiceChip({ category, imgUrl, text }: Props) {
   return (
     <li>
       <Link
-        className="flex items-center gap-4 p-4 rounded-full bg-white border border-[#F6EBEB] text-primary"
+        className="flex items-center gap-4 p-3 rounded-full bg-white border border-[#F6EBEB] text-primary"
         to={`/discovery/${category}`}
       >
         <img

@@ -1,49 +1,37 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Arrow } from './icons';
 
 function Home() {
   const { t } = useTranslation('home');
 
   return (
-    <div className="flex flex-col justify-between h-full bg-[url('/img/background/light_blue.png')] bg-cover bg-center">
+    <div className="flex flex-col justify-between h-full bg-[url('/img/background/dark.jpg')] bg-cover bg-center">
+      <div>{/* HEADER */}</div>
       <div>
-        <div className="px-4 pt-6 flex items-center gap-2">
-          <div className="h-2 w-8 rounded-full bg-blue-800" />
-          <div className="h-2 w-3 rounded-full bg-gray-400" />
-          <div className="h-2 w-3 rounded-full bg-gray-400" />
-          <div className="h-2 w-3 rounded-full bg-gray-400" />
-        </div>
+        {/* BODY */}
         <img
-          className="w-full max-w-[16rem] mx-auto"
-          src={`${import.meta.env.BASE_URL}img/logo.png`}
-          alt="Logo Bombay"
+          className="w-2/3 max-w-md mx-auto"
+          src={`${import.meta.env.BASE_URL}img/discovery_logo.png`}
+          alt="The beer discovery"
         />
       </div>
+
       <img
-        className="w-2/3 max-w-md mx-auto"
-        src={`${import.meta.env.BASE_URL}img/claim.png`}
-        alt="Claim Your Bombay of the Day"
+        className="w-full absolute bottom-0 left-0"
+        src={`${import.meta.env.BASE_URL}img/light_wave.png`}
+        alt="The beer discovery"
       />
-      <div>
-        <img
-          className="w-full shrink-0"
-          src={`${import.meta.env.BASE_URL}img/wave.png`}
-          alt="Wave"
-        />
-        <div className="px-4 pb-6 bg-[#020046] text-blue-50">
-          <h1 className="text-3xl font-bold tracking-tight text-center">
-            {t('title')}
-          </h1>
-          <p className="text-base font-medium tracking-tight text-center mt-4 mb-8">
-            {t('subtitle')}
-          </p>
-          <Link
-            className="flex items-center justify-center h-14 bg-blue-50 text-[#020046] rounded-md font-bold text-base tracking-tight"
-            to="/discovery"
-          >
-            {t('cta')}
-          </Link>
-        </div>
+
+      <div className="px-4 z-10 relative flex h-36 items-center">
+        {/* FOOTER */}
+        <Link
+          className="py-3 relative grow bg-button text-white rounded-md font-medium text-base text-center tracking-tight"
+          to="/discovery"
+        >
+          {t('cta')}
+          <Arrow className="absolute right-4 top-1/2 -translate-y-1/2" />
+        </Link>
       </div>
     </div>
   );

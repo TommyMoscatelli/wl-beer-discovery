@@ -37,16 +37,61 @@ export const products = [
   },
 ];
 
-export const categories = [
+export const events = [
   {
-    slug: 'traditional',
-    image: 'img/gin-tradizionale.png',
+    slug: 'aperitif',
+    image: 'img/event_aperitif.jpg',
   },
   {
-    slug: 'flavored',
-    image: 'img/gin-aromatizzato.png',
+    slug: 'dinner',
+    image: 'img/event_dinner.jpg',
+  },
+  {
+    slug: 'lunch',
+    image: 'img/event_lunch.jpg',
+  },
+  {
+    slug: 'after-dinner',
+    image: 'img/event_after-dinner.jpg',
   },
 ];
+
+export const tastes = [
+  {
+    slug: 'aromatic',
+    image: 'img/taste_aromatic.jpg',
+    events: ['aperitif'],
+  },
+  {
+    slug: 'classic',
+    image: 'img/taste_classic.jpg',
+    events: ['aperitif', 'lunch'],
+  },
+  {
+    slug: 'dry',
+    image: 'img/taste_dry.jpg',
+    events: ['dinner'],
+  },
+  {
+    slug: 'full',
+    image: 'img/taste_full.jpg',
+    events: ['dinner'],
+  },
+  {
+    slug: 'rounded',
+    image: 'img/taste_rounded.jpg',
+    events: ['after-dinner'],
+  },
+  {
+    slug: 'unexpected',
+    image: 'img/taste_unexpected.jpg',
+    events: ['after-dinner', 'lunch'],
+  },
+];
+
+export function getTastes(event: string) {
+  return tastes.filter((taste) => taste.events.includes(event));
+}
 
 export const characteristics = [
   {

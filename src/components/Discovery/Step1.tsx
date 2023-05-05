@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { findCategories } from './decisionTree';
-import { ChevronRight } from '../icons';
+import { Chevron } from '../icons';
 
 export default function Step1() {
   const { t } = useTranslation('discovery');
@@ -33,7 +33,7 @@ export default function Step1() {
               <span className="flex-1 text-xl font-medium tracking-tight">
                 {t(`category.${category.slug}`)}
               </span>
-              <ChevronRight className="w-6 shrink-0" />
+              <Chevron className="w-6 shrink-0" />
             </Link>
           </li>
         ))}

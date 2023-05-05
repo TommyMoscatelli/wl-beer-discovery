@@ -12,7 +12,9 @@ export default function Footer({ version, children }: Props): JSX.Element {
         src={`${import.meta.env.BASE_URL}img/${version}_wave.png`}
         alt="The beer discovery"
       />
-      <div className="z-10 h-full relative flex items-center">{children}</div>
+      <div className="z-10 h-full relative flex items-center justify-center">
+        {children}
+      </div>
     </div>
   );
 }

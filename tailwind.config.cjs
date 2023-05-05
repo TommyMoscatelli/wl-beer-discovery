@@ -7,8 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        button: {
-          DEFAULT: "#3A2613"
+        primary: {
+          DEFAULT:"#997412",
+          dark: "#3A2613"
         }
       },
       fontFamily: {

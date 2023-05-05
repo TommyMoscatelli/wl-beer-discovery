@@ -25,7 +25,7 @@ function Home() {
           alt="The beer discovery"
         />
         <Link
-          className="py-3 relative grow bg-button text-white rounded-md font-medium text-base text-center tracking-tight"
+          className="py-3 relative grow bg-primary-dark text-white rounded-md font-medium text-base text-center tracking-tight"
           to="/discovery"
         >
           {t('cta')}

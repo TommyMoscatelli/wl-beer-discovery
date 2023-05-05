@@ -4,12 +4,13 @@ import { Arrow } from './icons';
 import Footer from './common/Footer';
 import Button from './common/Button';
 import Header from './common/Header';
+import ScreenContainer from './common/ScreenContainer';
 
 function Home() {
   const { t } = useTranslation('home');
 
   return (
-    <div className="flex flex-col justify-between h-full bg-[url('/img/background/dark.jpg')] bg-cover bg-center">
+    <ScreenContainer variant="dark">
       <Header />
 
       <img
@@ -21,7 +22,7 @@ function Home() {
       <Footer variant="light">
         <Button text={t('cta')} href="/discovery" />
       </Footer>
-    </div>
+    </ScreenContainer>
   );
 }
 

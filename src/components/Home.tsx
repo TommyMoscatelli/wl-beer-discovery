@@ -21,7 +21,7 @@ function Home() {
       </div>
 
       <Footer version="light">
-        <Button text={t('cta')} />
+        <Button text={t('cta')} href="/discovery" />
       </Footer>
     </div>
   );

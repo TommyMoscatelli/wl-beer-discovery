@@ -15,5 +15,5 @@ export default function ScreenContainer({ variant, children }: Props) {
 }
 
 ScreenContainer.defaultProps = {
-  variant: 'dark',
+  variant: 'light',
 };

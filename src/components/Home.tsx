@@ -18,7 +18,7 @@ function Home() {
         alt="The beer discovery"
       />
 
-      <Footer version="light">
+      <Footer variant="light">
         <Button text={t('cta')} href="/discovery" />
       </Footer>
     </div>

@@ -89,7 +89,11 @@ export const tastes = [
   },
 ];
 
-export function getTastes(event: string) {
+export function getTastes(event: string | undefined) {
+  if (!event) {
+    return [];
+  }
+
   return tastes.filter((taste) => taste.events.includes(event));
 }
 

@@ -1,13 +1,16 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Arrow } from './icons';
+import Footer from './common/Footer';
+import Button from './common/Button';
+import Header from './common/Header';
 
 function Home() {
   const { t } = useTranslation('home');
 
   return (
     <div className="flex flex-col justify-between h-full bg-[url('/img/background/dark.jpg')] bg-cover bg-center">
-      <div>{/* HEADER */}</div>
+      <Header />
       <div>
         {/* BODY */}
         <img
@@ -17,21 +20,9 @@ function Home() {
         />
       </div>
 
-      <div className="px-4 z-10 relative flex h-36 items-center">
-        {/* FOOTER */}
-        <img
-          className="w-full absolute bottom-0 left-0"
-          src={`${import.meta.env.BASE_URL}img/light_wave.png`}
-          alt="The beer discovery"
-        />
-        <Link
-          className="py-3 relative grow bg-primary-dark text-white rounded-md font-medium text-base text-center tracking-tight"
-          to="/discovery"
-        >
-          {t('cta')}
-          <Arrow className="absolute right-4 top-1/2 -translate-y-1/2" />
-        </Link>
-      </div>
+      <Footer version="light">
+        <Button text={t('cta')} />
+      </Footer>
     </div>
   );
 }

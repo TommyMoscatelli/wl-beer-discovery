@@ -2,17 +2,18 @@ import { Link } from 'react-router-dom';
 import { Chevron } from '../icons';
 
 interface Props {
+  to: string;
   category: string;
   text: string;
   imgUrl: string;
 }
 
-export default function ChoiceChip({ category, imgUrl, text }: Props) {
+export default function ChoiceChip({ to, category, imgUrl, text }: Props) {
   return (
     <li>
       <Link
         className="flex items-center gap-4 p-3 rounded-full bg-white border border-[#F6EBEB] text-primary"
-        to={`/discovery/${category}`}
+        to={`/discovery/${to}`}
       >
         <img
           src={`${import.meta.env.BASE_URL}${imgUrl}`}

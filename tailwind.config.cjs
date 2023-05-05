@@ -6,6 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        button: {
+          DEFAULT: "#3A2613"
+        }
+      },
       fontFamily: {
         sans: ['Work Sans', ...require('tailwindcss/defaultTheme').fontFamily.sans],
       },

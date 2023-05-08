@@ -6,7 +6,7 @@ interface Props extends PropsWithChildren {
 
 export default function Footer({ variant, children }: Props): JSX.Element {
   return (
-    <div className="px-4 h-36">
+    <div className="px-6 h-36">
       <img
         className="w-full absolute bottom-0 left-0"
         src={`${import.meta.env.BASE_URL}img/${variant}_wave.png`}

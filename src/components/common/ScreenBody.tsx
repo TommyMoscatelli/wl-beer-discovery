@@ -10,7 +10,7 @@ export default function ScreenBody({ title, titleColor, children }: Props) {
     titleColor === 'default' ? 'text-primary' : 'text-primary-dark';
 
   return (
-    <div className="grow px-10 py-12 flex flex-col">
+    <div className="grow px-6 py-12 flex flex-col">
       <h1
         className={`text-3xl font-bold tracking-tigh mb-10 text-center ${titleColorClass}`}
       >

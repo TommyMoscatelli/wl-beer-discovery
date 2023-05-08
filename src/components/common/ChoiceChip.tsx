@@ -13,7 +13,7 @@ export default function ChoiceChip({ to, category, imgUrl, text }: Props) {
     <li>
       <Link
         className="flex items-center gap-4 p-3 rounded-full bg-white border border-[#F6EBEB] text-primary"
-        to={`/discovery/${to}`}
+        to={to}
       >
         <img
           src={`${import.meta.env.BASE_URL}${imgUrl}`}

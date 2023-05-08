@@ -1,49 +1,107 @@
 {
   "step1": {
-    "title": "Che tipo di gin vuoi bere oggi?",
-    "hint": {
+    "title": "In che occasione berrai la tua birra?",
+    "fact": {
       "title": "Lo sapevi che...",
-      "description": "Il logo e il colore della bottiglia di Bombay si ispirano alla Stella di Bombay: uno zaffiro (in inglese, sapphire) di ben 182 carati, originario dello Sri Lanka. Una vera gemma!"
+      "description": "I primi mastri birrai erano donne?"
     }
   },
   "step2": {
-    "title": "Come vuoi che sia?",
-    "hint": {
+    "title": "La preferisci...",
+    "fact": {
       "title": "Lo sapevi che...",
-      "description": "Ivano Tonutti, Master of Botanicals di Bombay, setaccia l'intero globo per selezionare le migliori botaniche che conferiscono ad ogni gin un aroma inconfondibile!"
+      "description": "La birra più costosa del mondo viene venduta a un prezzo di 780 dollari?"
     }
   },
   "step3": {
-    "title": "Ecco il tuo gin",
-    "purchase": "Acquistalo",
-    "browse": "Scopri l'intera gamma"
+    "title": "Vuoi che sia...",
+    "fact": {
+      "title": "Lo sapevi che...",
+      "description": "Le prime testimonianze della produzione di birra risalgono a 7.000 anni fa?"
+    }
   },
-  "category": {
-    "traditional": "Un gin tradizionale",
-    "flavored": "Un gin aromatizzato"
+  "step4": {
+    "title": "Ecco la birra che cerchi!",
+    "button": {
+      "buy": "Ordina subito!",
+      "browse": "Scopri altre birre!"
+    }
+  },
+  "event": {
+    "aperitif": "Aperitivo con gli amici",
+    "dinner": "A cena",
+    "lunch": "A pranzo",
+    "after-dinner": "Dopo cena"
+  },
+  "taste": {
+    "aromatic": "Leggera e aromatica",
+    "classic": "Dal gusto classico",
+    "dry": "Dal gusto secco",
+    "full": "Dal gusto pieno",
+    "rounded": "Dal gusto rotondo",
+    "unexpected": "Dal gusto inaspettato"
   },
   "characteristic": {
-    "balanced": "Equilibrato, versatile e aromatico",
-    "round": "Rotondo, agrumato e ricercato",
-    "light": "Leggero, ideale per l'aperitivo",
-    "spicy": "Aromatico e speziato"
+    "caramel": "Caramellata",
+    "for-fried-dishes": "Adatta per un buon fritto",
+    "for-light-dishes": "Adatta per piatti delicati",
+    "for-pizza": "Adatta per una pizza",
+    "for-structured-dishes": "Adatta per piatti strutturati",
+    "good-for-driving": "Adatta se si ha necessità di mettersi in macchina",
+    "honey": "Mielata",
+    "light-body": "Dal corpo leggero",
+    "malted-gluten-free": "maltata e senza glutine",
+    "malted": "Maltata",
+    "more-aromatic": "Più aromatica",
+    "more-hoppy": "Più luppolata",
+    "more-malted": "Più maltata",
+    "structured-light": "Strutturata e leggera",
+    "sweet-and-structured": "Dolce e strutturata"
   },
   "product": {
-    "sapphire": {
-      "title": "Prova Bombay Sapphire!",
-      "description": "10 botaniche provenienti da fonti certificate sostenibili e metodo distintivo dell'infusione a vapore: Bombay Sapphire, con il suo equilibrio e la sua aromaticità, è ciò che fa per te oggi!"
+    "peroni": {
+      "title": "Peroni",
+      "description": "Prodotta dal 1846, Peroni utilizza solo ingredienti selezionati come il Malto 100% Italiano, frutto di una speciale qualità di orzo, per offrire agli italiani una birra di alta qualità."
     },
-    "premier": {
-      "title": "Prova Bombay Sapphire Premier Cru!",
-      "description": "Un'eccellente materia prima altamente selezionata e trattata con procedimenti artigianali: il gusto agrumato del Limone di Murcia che caratterizza Bombay Sapphire Premier Cru è ciò che fa per te oggi!"
+    "peroni_nastro-azzurro_stile-capri": {
+      "title": "Peroni Nastro Azzurro Stile Capri",
+      "description": "Con il suo gusto leggero e rinfrescante, Peroni Nastro Azzurro Stile Capri si caratterizza per fresche note di limone e foglie d'ulivo che contribuiscono a darle sentori mediterranei, perfetti per l'aperitivo estivo."
     },
-    "presse": {
-      "title": "Prova Bombay Pressé!",
-      "description": "Un'infusione naturale di limoni freschi, senza zuccheri o altri aromi artificiali: oggi per il tuo aperitivo scegli la freschezza e la delicatezza di Bombay Pressé!"
+    "peroni_cruda": {
+      "title": "Peroni Cruda",
+      "description": "La microfiltrazione a basse temperature dona a Peroni Cruda un gusto fresco, una consistenza morbida e cremosa e un retrogusto piacevolmente amarognolo di luppoli per un'esperienza rinfrescante."
     },
-    "sunset": {
-      "title": "Prova Bombay Sunset!",
-      "description": "Toni speziati di curcuma e cardamomo, accompagnati da sentori di mandarino: Bombay Sunset è una vera esplosione di aromi, perfetto per il tuo aperitivo!"
+    "peroni_nastro-azzurro": {
+      "title": "Peroni Nastro Azzurro",
+      "description": "Gusto secco e rinfrescante con leggere note di amaro che vengono bilanciate dal profumo di fiori e spezie. Peroni Nastro Azzurro è leggera e fragrante, per un senso di freschezza fin dal primo sorso."
+    },
+    "peroni_non-filtrata": {
+      "title": "Peroni Non Filtrata",
+      "description": "Gusto pieno e note aromatiche di cereali. Il suo colore tipicamente opaco, dato dalla non filtrazione, preserva in Peroni Non Filtrata il sapore autentico degli ingredienti non trattati."
+    },
+    "asahi_super-dry": {
+      "title": "Asahi Super Dry",
+      "description": "La birra Giapponese per eccellenza. Prodotta con tecnologie innovative per garantire il suo gusto secco, Asahi Super Dry pulisce e gratifica il palato sorso dopo sorso."
+    },
+    "kozel_lager": {
+      "title": "Kozel lager",
+      "description": "Gusto ricco e morbido e un delicato aroma di malto e luppolo. Kozel Lager nasce dalla miscela di 3 malti, che le conferiscono un gusto bilanciato e un piacevole aroma."
+    },
+    "peroni_nastro-azzurro_00": {
+      "title": "Peroni Nastro Azzurro 0.0%",
+      "description": "Gusto secco e rinfrescante con leggere note di amaro che vengono bilanciate dal profumo di fiori e spezie. Peroni Nastro Azzurro 0.0% è leggera e fragrante, per un senso di freschezza fin dal primo sorso."
+    },
+    "peroni_senza-glutine": {
+      "title": "Peroni Senza Glutine",
+      "description": "La Peroni di sempre, con un perfetto equilibrio tra dolce e amaro e un sapore poco luppolato e facile da bere. Peroni Senza Glutine è perfetta per godersi una buona birra seguendo un’alimentazione gluten free."
+    },
+    "kozel_dark": {
+      "title": "Kozel Dark",
+      "description": "Gusto leggero e sorprendentemente rinfrescante. Il bilanciamento perfetto tra il dolce del caramello e il fresco aroma di luppolo donano a Kozel Dark un gusto morbido ma mai stucchevole."
+    },
+    "peroni_gran-riserva_rossa": {
+      "title": "Peroni Gran Riserva Rossa",
+      "description": "Corpo leggero, ma dotato di complessità aromatica grazie alle note di malto e caramello. La fermentazione a bassa temperatura conferisce a Peroni Gran Riserva Rossa un gusto morbido ed unico."
     }
   }
 }

@@ -254,37 +254,15 @@ export function getCharacteristic(event?: string, taste?: string) {
   );
 }
 
-export function getResult(event: string, taste: string, charact: string) {
+export function getResult(event?: string, taste?: string, charact?: string) {
+  if (!event || !taste || !charact) {
+    return null;
+  }
+
   return characteristics
     .filter(
       (characteristic) =>
         characteristic.taste === taste && characteristic.events.includes(event)
     )
     .find((c) => c.slug === charact)?.result;
-}
-
-export function findCategories() {
-  const productChars = products.map((product) => product.category);
-  return categories.filter((c) => productChars.includes(c.slug));
-}
-
-export function findCharacteristics(params: { category?: string } = {}) {
-  const productChars = products
-    .filter((product) =>
-      params.category ? product.category === params.category : true
-    )
-    .map((product) => product.characteristic);
-
-  return characteristics.filter((c) => productChars.includes(c.slug));
-}
-
-export function findProduct(params: {
-  category: string;
-  characteristic: string;
-}) {
-  return products.find(
-    (p) =>
-      p.category === params.category &&
-      p.characteristic === params.characteristic
-  );
 }

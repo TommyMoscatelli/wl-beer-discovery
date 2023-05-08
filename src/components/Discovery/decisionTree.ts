@@ -182,7 +182,7 @@ export const characteristics = [
     result: products.kozel_lager,
   },
   {
-    slug: 'light_body',
+    slug: 'light-body',
     image: 'img/characteristic_light-body.jpg',
     taste: 'aromatic',
     events: ['aperitif'],
@@ -243,7 +243,11 @@ export const characteristics = [
 // HINT: I can get beer by only characteristic since each char is unique (except one)
 // SO product doesn't need to
 
-export function getCharacteristic(event: string, taste: string) {
+export function getCharacteristic(event?: string, taste?: string) {
+  if (!event || !taste) {
+    return [];
+  }
+
   return characteristics.filter(
     (characteristic) =>
       characteristic.taste === taste && characteristic.events.includes(event)

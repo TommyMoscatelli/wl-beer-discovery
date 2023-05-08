@@ -1,41 +1,75 @@
-export const products = [
-  {
-    id: '59ada78b367c010023bc3bee',
-    slug: 'sapphire',
-    image: 'img/product/bottle_bombay_sapphire.png',
-    background: 'img/background/blue.png',
-    logo: 'img/logo_white.png',
-    category: 'traditional',
-    characteristic: 'balanced',
+type Characteristics = { isAlcoolFree: boolean; isGlutenFree: boolean };
+
+type Product = {
+  id: string;
+  slug: string;
+  image: string;
+  characteristics?: Partial<Characteristics>;
+};
+
+export const products: Record<string, Product> = {
+  peroni: {
+    id: '61435857c870ed0064175c8e',
+    slug: 'peroni',
+    image: 'img/product/peroni.png',
   },
-  {
-    id: '6177f488479a730067687c94',
-    slug: 'premier',
-    image: 'img/product/bottle_bombay_sapphire_cru.png',
-    background: 'img/background/light_yellow.png',
-    logo: 'img/logo.png',
-    category: 'traditional',
-    characteristic: 'round',
+  'peroni_nastro-azzurro_stile-capri': {
+    id: '63f76a1a4e0a5e00693aff94',
+    slug: 'peroni_nastro-azzurro_stile-capri',
+    image: 'img/product/peroni_nastro-azzurro_stile-capri.png',
   },
-  {
-    id: '63f8d8d6f3bab2006c43f383',
-    slug: 'presse',
-    image: 'img/product/bottle_bombay_presse.png',
-    background: 'img/background/yellow.png',
-    logo: 'img/logo.png',
-    category: 'flavored',
-    characteristic: 'light',
+  peroni_cruda: {
+    id: '6411e6b3b853136721a7c4e6 ',
+    slug: 'peroni_cruda',
+    image: 'img/product/peroni_cruda.png',
   },
-  {
-    id: '60801e427de2c50013d51b12',
-    slug: 'sunset',
-    image: 'img/product/bottle_bombay_sunset.png',
-    background: 'img/background/orange.png',
-    logo: 'img/logo_white.png',
-    category: 'flavored',
-    characteristic: 'spicy',
+  'peroni_nastro-azzurro': {
+    id: '62cfecb258e12b006793fd36',
+    slug: 'peroni_nastro-azzurro',
+    image: 'img/product/peroni_nastro-azzurro.png',
   },
-];
+  'peroni_non-filtrata': {
+    id: '63f76a834e0a5e00693b0361',
+    slug: 'peroni_non-filtrata',
+    image: 'img/product/peroni_non-filtrata.png',
+  },
+  'asahi_super-dry': {
+    id: '614344da76d72000637bba8b',
+    slug: 'asahi_super-dry',
+    image: 'img/product/asahi_super-dry.png',
+  },
+  kozel_lager: {
+    id: '61434a5e76d72000637be986',
+    slug: 'kozel_lager',
+    image: 'img/product/kozel_lager.png',
+  },
+  'peroni_nastro-azzurro_00': {
+    id: '636d2516faef8f006b2092a1',
+    slug: 'peroni_nastro-azzurro_00',
+    image: 'img/product/peroni_nastro-azzurro_00.png',
+    characteristics: {
+      isAlcoolFree: true,
+    },
+  },
+  'peroni_senza-glutine': {
+    id: '6143538b76d72000637c33e3',
+    slug: 'peroni_senza-glutine',
+    image: 'img/product/peroni_senza-glutine.png',
+    characteristics: {
+      isGlutenFree: true,
+    },
+  },
+  kozel_dark: {
+    id: '61434d3376d72000637c01e6',
+    slug: 'kozel_dark',
+    image: 'img/product/kozel_dark.png',
+  },
+  'peroni_gran-riserva_rossa': {
+    id: '6143554076d72000637c43ef',
+    slug: 'peroni_gran-riserva_rossa',
+    image: 'img/product/peroni_gran-riserva_rossa.png',
+  },
+};
 
 export const events = [
   {
@@ -99,22 +133,131 @@ export function getTastes(event: string | undefined) {
 
 export const characteristics = [
   {
-    slug: 'balanced',
-    image: 'img/equilibrato-versatile-e-aromatico.png',
+    slug: 'caramel',
+    image: 'img/characteristic_caramel.jpg',
+    taste: 'rounded',
+    events: ['after-dinner'],
+    result: products['peroni_gran-riserva_rossa'],
   },
   {
-    slug: 'round',
-    image: 'img/rotondo-agrumato-e-ricercato.png',
+    slug: 'for-fried-dishes',
+    image: 'img/characteristic_for-fried-dishes.jpg',
+    taste: 'dry',
+    events: ['dinner'],
+    result: products['peroni_nastro-azzurro'],
   },
   {
-    slug: 'light',
-    image: 'img/leggero-per-aperitivo.png',
+    slug: 'for-light-dishes',
+    image: 'img/characteristic_for-light-dishes.jpg',
+    taste: 'dry',
+    events: ['dinner'],
+    result: products['asahi_super-dry'],
   },
   {
-    slug: 'spicy',
-    image: 'img/aromatico-speziato.png',
+    slug: 'for-pizza',
+    image: 'img/characteristic_for-pizza.jpg',
+    taste: 'full',
+    events: ['dinner'],
+    result: products['peroni_non-filtrata'],
+  },
+  {
+    slug: 'for-structured-dishes',
+    image: 'img/characteristic_for-structured-dishes.jpg',
+    taste: 'full',
+    events: ['dinner'],
+    result: products.kozel_lager,
+  },
+  {
+    slug: 'good-for-driving',
+    image: 'img/characteristic_good-for-driving.jpg',
+    taste: 'unexpected',
+    events: ['lunch', 'after-dinner'],
+    result: products['peroni_nastro-azzurro_00'],
+  },
+  {
+    slug: 'honey',
+    image: 'img/characteristic_honey.jpg',
+    taste: 'rounded',
+    events: ['after-dinner'],
+    result: products.kozel_lager,
+  },
+  {
+    slug: 'light_body',
+    image: 'img/characteristic_light-body.jpg',
+    taste: 'aromatic',
+    events: ['aperitif'],
+    result: products.peroni_cruda,
+  },
+  {
+    slug: 'malted-gluten-free',
+    image: 'img/characteristic_malted-gluten-free.jpg',
+    taste: 'classic',
+    events: ['lunch'],
+    result: products['peroni_senza-glutine'],
+  },
+  {
+    slug: 'malted',
+    image: 'img/characteristic_malted.jpg',
+    taste: 'classic',
+    events: ['lunch'],
+    result: products.peroni,
+  },
+  {
+    slug: 'more-aromatic',
+    image: 'img/characteristic_more-aromatic.jpg',
+    taste: 'aromatic',
+    events: ['aperitif'],
+    result: products['peroni_nastro-azzurro_stile-capri'],
+  },
+  {
+    slug: 'more-hoppy',
+    image: 'img/characteristic_more-hoppy.jpg',
+    taste: 'classic',
+    events: ['aperitif'],
+    result: products['peroni_nastro-azzurro'],
+  },
+  {
+    slug: 'more-malted',
+    image: 'img/characteristic_more-malted.jpg',
+    taste: 'classic',
+    events: ['aperitif'],
+    result: products.peroni,
+  },
+  {
+    slug: 'structured-light',
+    image: 'img/characteristic_structured-light.jpg',
+    taste: 'unexpected',
+    events: ['lunch'],
+    result: products.kozel_dark,
+  },
+  {
+    slug: 'sweet-and-structured',
+    image: 'img/characteristic_sweet-and-structured.jpg',
+    taste: 'unexpected',
+    events: ['after-dinner'],
+    result: products.kozel_dark,
   },
 ];
+
+// TODO: Get products based on taste and events
+// HINT: I can get beer by only characteristic since each char is unique (except one)
+// SO product doesn't need to
+
+export function getCharacteristic(event: string, taste: string) {
+  return characteristics.filter(
+    (characteristic) =>
+      characteristic.taste === taste && characteristic.events.includes(event)
+  );
+}
+
+export function getResult(event: string, taste: string, charact: string) {
+  return characteristics
+    .filter(
+      (characteristic) =>
+        characteristic.taste === taste && characteristic.events.includes(event)
+    )
+    .find((c) => c.slug === charact)?.result;
+}
 
 export function findCategories() {
   const productChars = products.map((product) => product.category);

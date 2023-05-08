@@ -12,7 +12,7 @@ export default function ScreenContainer({ variant, children }: Props) {
 
   return (
     <div
-      className={`flex flex-col justify-between h-full ${backgroundClass} bg-cover bg-center`}
+      className={`min-h-screen flex flex-col justify-between h-full ${backgroundClass} bg-cover bg-center`}
     >
       {children}
     </div>

@@ -1,18 +1,24 @@
 import { MouseEvent } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { getResult } from './decisionTree';
 import ScreenContainer from '../common/ScreenContainer';
 import Header from '../common/Header';
 import ScreenBody from '../common/ScreenBody';
 import Footer from '../common/Footer';
 import Button from '../common/Button';
+import decisionTree from '../../data/decisionTree';
 
 export default function Step4() {
   const { t } = useTranslation('discovery');
   const { event, taste, characteristic } = useParams();
+  const navigate = useNavigate();
 
-  const product = getResult(event, taste, characteristic);
+  if (!event || !taste || !characteristic) {
+    navigate('/');
+    return null;
+  }
+
+  const product = decisionTree.getResult([event, taste, characteristic]);
 
   function navigateDeepLink(link: string) {
     // @ts-ignore

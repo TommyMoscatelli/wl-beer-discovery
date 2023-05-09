@@ -5,14 +5,18 @@ interface Props extends PropsWithChildren {
 }
 
 export default function Footer({ variant, children }: Props): JSX.Element {
+  const backgroundColorClass =
+    variant === 'dark' ? 'bg-[#D2A42A]' : 'bg-[#EADB97]';
   return (
-    <div className="px-6 h-36">
+    <div className="">
       <img
-        className="w-full absolute bottom-0 left-0"
+        className="w-full"
         src={`${import.meta.env.BASE_URL}img/${variant}_wave.png`}
         alt="The beer discovery"
       />
-      <div className="z-10 h-full relative flex items-center justify-center">
+      <div
+        className={`px-6 pb-8 pt-4 flex items-center justify-center ${backgroundColorClass}`}
+      >
         {children}
       </div>
     </div>

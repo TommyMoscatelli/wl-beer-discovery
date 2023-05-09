@@ -4,7 +4,7 @@ export default {
     slug: 'peroni',
     image: 'img/product/peroni.png',
   },
-  'peroni_nastro-azzurro_stile-capri': {
+  peroni_nastro_azzurro_stile_capri: {
     id: '63f76a1a4e0a5e00693aff94',
     slug: 'peroni_nastro-azzurro_stile-capri',
     image: 'img/product/peroni_nastro-azzurro_stile-capri.png',
@@ -14,17 +14,17 @@ export default {
     slug: 'peroni_cruda',
     image: 'img/product/peroni_cruda.png',
   },
-  'peroni_nastro-azzurro': {
+  peroni_nastro_azzurro: {
     id: '62cfecb258e12b006793fd36',
     slug: 'peroni_nastro-azzurro',
     image: 'img/product/peroni_nastro-azzurro.png',
   },
-  'peroni_non-filtrata': {
+  peroni_non_filtrata: {
     id: '63f76a834e0a5e00693b0361',
     slug: 'peroni_non-filtrata',
     image: 'img/product/peroni_non-filtrata.png',
   },
-  'asahi_super-dry': {
+  asahi_super_dry: {
     id: '614344da76d72000637bba8b',
     slug: 'asahi_super-dry',
     image: 'img/product/asahi_super-dry.png',
@@ -34,7 +34,7 @@ export default {
     slug: 'kozel_lager',
     image: 'img/product/kozel_lager.png',
   },
-  'peroni_nastro-azzurro_00': {
+  peroni_nastro_azzurro_00: {
     id: '636d2516faef8f006b2092a1',
     slug: 'peroni_nastro-azzurro_00',
     image: 'img/product/peroni_nastro-azzurro_00.png',
@@ -42,7 +42,7 @@ export default {
       isAlcoolFree: true,
     },
   },
-  'peroni_senza-glutine': {
+  peroni_senza_glutine: {
     id: '6143538b76d72000637c33e3',
     slug: 'peroni_senza-glutine',
     image: 'img/product/peroni_senza-glutine.png',
@@ -55,7 +55,7 @@ export default {
     slug: 'kozel_dark',
     image: 'img/product/kozel_dark.png',
   },
-  'peroni_gran-riserva_rossa': {
+  peroni_gran_riserva_rossa: {
     id: '6143554076d72000637c43ef',
     slug: 'peroni_gran-riserva_rossa',
     image: 'img/product/peroni_gran-riserva_rossa.png',

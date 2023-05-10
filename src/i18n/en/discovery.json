@@ -1,49 +1,107 @@
 {
   "step1": {
-    "title": "What kind of gin do you want to drink today?",
-    "hint": {
+    "title": "In which occasion will you drink your beer?",
+    "fact": {
       "title": "Did you know that...",
-      "description": "The logo and color of the Bombay bottle are inspired by the Star of Bombay: a 182-carat sapphire originally from Sri Lanka. A true gem!"
+      "description": "The first master brewers were women?"
     }
   },
   "step2": {
-    "title": "How do you want it to be?",
-    "hint": {
-      "title": "Did you know that...",
-      "description": "Ivano Tonutti, Bombay's Master of Botanicals, sifts the entire globe to select the best botanicals that give each gin an unmistakable aroma!"
+    "title": "You prefer it...",
+    "fact": {
+      "title": "Did you know that... ",
+      "description": "The most expensive beer in the world is sold at a price of $780?"
     }
   },
   "step3": {
-    "title": "Here's your gin",
-    "purchase": "Buy it",
-    "browse": "Discover the whole range"
+    "title": "You want it to be...",
+    "fact": {
+      "title": "Did you know that... ",
+      "description": "The earliest evidence of brewing dates back 7,000 years?"
+    }
   },
-  "category": {
-    "traditional": "A traditional gin",
-    "flavored": "A flavored gin"
+  "step4": {
+    "title": "Here's the beer you are looking for!",
+    "button": {
+      "buy": "Order now!",
+      "browse": "Discover more beers!"
+    }
+  },
+  "event": {
+    "aperitif": "Aperitif with friends",
+    "dinner": "At dinner",
+    "lunch": "At lunch",
+    "after-dinner": "After dinner"
+  },
+  "taste": {
+    "aromatic": "Light and aromatic",
+    "classic": "With a classic taste",
+    "dry": "Dry-tasting",
+    "full": "Full-flavored",
+    "rounded": "With a round taste",
+    "unexpected": "With an unexpected taste"
   },
   "characteristic": {
-    "balanced": "Balanced, versatile and aromatic",
-    "round": "Round, citrusy and refined",
-    "light": "Light, ideal for an aperitif",
-    "spicy": "Aromatic and spicy"
+    "caramel": "Caramelized",
+    "for-fried-dishes": "Suitable for a good fry",
+    "for-light-dishes": "Suitable for delicate dishes",
+    "for-pizza": "Suitable for a pizza",
+    "for-structured-dishes": "Suitable for structured dishes",
+    "good-for-driving": "suitable if you need to get in the car",
+    "honey": "Honeyed",
+    "light-body": "Light-bodied",
+    "malted-gluten-free": "Malted and gluten-free",
+    "malted": "Malted",
+    "more-aromatic": "More aromatic",
+    "more-hoppy": "More hopped",
+    "more-malted": "Maltier",
+    "structured-light": "Structured and light",
+    "sweet-and-structured": "Sweet and textured"
   },
   "product": {
-    "sapphire": {
-      "title": "Try Bombay Sapphire!",
-      "description": "10 botanicals from certified sustainable sources and distinctive steam infusion method: Bombay Sapphire, with its balance and aromaticity, is what you need today!"
+    "peroni": {
+      "title": "Peroni",
+      "description": "Brewed since 1846, Peroni uses only selected ingredients such as 100% Italian Malt, the result of a special quality of barley, to offer Italians a high quality beer."
     },
-    "premier": {
-      "title": "Try Bombay Sapphire Premier Cru!",
-      "description": "An excellent raw material highly selected and treated with artisanal procedures: the citrus taste of Lemon of Murcia that characterizes Bombay Sapphire Premier Cru is what's right for you today!"
+    "peroni_nastro-azzurro_stile-capri": {
+      "title": "Peroni Nastro Azzurro Stile Capri",
+      "description": "With its light and refreshing taste, Peroni Nastro Azzurro Stile Capri features fresh notes of lemon and olive leaves that help give it Mediterranean hints, perfect for summer aperitifs."
     },
-    "presse": {
-      "title": "Try Bombay Pressé!",
-      "description": "A natural infusion of fresh lemons, without sugar or other artificial flavourings: today for your aperitif choose the freshness and delicacy of Bombay Pressé!"
+    "peroni_cruda": {
+      "title": "Peroni Cruda",
+      "description": "Low-temperature microfiltration gives Peroni Cruda a fresh taste, a smooth, creamy texture and a pleasantly bitter hop aftertaste for a refreshing experience."
     },
-    "sunset": {
-      "title": "Try Bombay Sunset!",
-      "description": "Spicy tones of turmeric and cardamom, accompanied by hints of mandarin: Bombay Sunset is a real explosion of aromas, perfect for your aperitif!"
+    "peroni_nastro-azzurro": {
+      "title": "Peroni Nastro Azzurro",
+      "description": "Dry and refreshing taste with light notes of bitterness that are balanced by the aroma of flowers and spices. Peroni Nastro Azzurro is light and fragrant for a sense of freshness from the first sip."
+    },
+    "peroni_non-filtrata": {
+      "title": "Peroni Non Filtrata",
+      "description": "Full flavor and aromatic notes of grain. Its typically opaque color, given by unfiltering, preserves in Peroni Non Filtrata the authentic flavor of unprocessed ingredients."
+    },
+    "asahi_super-dry": {
+      "title": "Asahi Super Dry",
+      "description": "The ultimate Japanese beer. Brewed with innovative technologies to ensure its dry taste, Asahi Super Dry cleanses and gratifies the palate sip after sip."
+    },
+    "kozel_lager": {
+      "title": "Kozel lager",
+      "description": "Rich, smooth taste and a delicate aroma of malt and hops. Kozel Lager comes from a blend of 3 malts, giving it a balanced taste and pleasant aroma."
+    },
+    "peroni_nastro-azzurro_00": {
+      "title": "Peroni Nastro Azzurro 0.0%",
+      "description": "Dry and refreshing taste with slight notes of bitterness that are balanced by the aroma of flowers and spices. Peroni Nastro Azzurro 0.0% is light and fragrant for a sense of freshness from the first sip."
+    },
+    "peroni_senza-glutine": {
+      "title": "Peroni Senza Glutine",
+      "description": "The Peroni of all time, with a perfect balance of sweet and bitter and a low-hop flavor that is easy to drink. Peroni Gluten Free is perfect for enjoying a good beer while following a gluten-free diet."
+    },
+    "kozel_dark": {
+      "title": "Kozel Dark",
+      "description": "Light and surprisingly refreshing taste. The perfect balance of sweet caramel and fresh hop aroma give Kozel Dark a smooth but never cloying taste."
+    },
+    "peroni_gran-riserva_rossa": {
+      "title": "Peroni Gran Riserva Rossa",
+      "description": "Light-bodied, yet endowed with aromatic complexity thanks to notes of malt and caramel. Low-temperature fermentation gives Peroni Gran Riserva Rossa a smooth and unique taste."
     }
   }
 }

@@ -5,12 +5,16 @@ import ScreenContainer from '../common/ScreenContainer';
 import ScreenBody from '../common/ScreenBody';
 import ChoiceList from '../common/ChoiceList';
 import Fact from '../common/Fact';
-import decisionTree from '../../data/decisionTree';
+import useStep from '../../lib/decision-tree/hooks/useStep';
 
 export default function Step1() {
   const { t } = useTranslation('discovery');
 
-  const events = decisionTree.getStep();
+  const events = useStep();
+
+  if (!events) {
+    throw new Error('An error as occurred fetching events');
+  }
 
   return (
     <ScreenContainer>

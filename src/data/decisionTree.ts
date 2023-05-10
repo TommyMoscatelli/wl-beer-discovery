@@ -14,12 +14,10 @@ const schema = createSchema<Decision, Product>([
         children: [
           {
             value: characteristics.malted,
-            children: [],
             result: products.peroni,
           },
           {
             value: characteristics.more_hoppy,
-            children: [],
             result: products.peroni_nastro_azzurro,
           },
         ],
@@ -29,12 +27,10 @@ const schema = createSchema<Decision, Product>([
         children: [
           {
             value: characteristics.more_aromatic,
-            children: [],
             result: products.peroni_nastro_azzurro_stile_capri,
           },
           {
             value: characteristics.light_body,
-            children: [],
             result: products.peroni_cruda,
           },
         ],
@@ -49,12 +45,10 @@ const schema = createSchema<Decision, Product>([
         children: [
           {
             value: characteristics.for_pizza,
-            children: [],
             result: products.peroni_non_filtrata,
           },
           {
             value: characteristics.for_structured_dishes,
-            children: [],
             result: products.kozel_lager,
           },
         ],
@@ -64,12 +58,10 @@ const schema = createSchema<Decision, Product>([
         children: [
           {
             value: characteristics.for_light_dishes,
-            children: [],
             result: products.asahi_super_dry,
           },
           {
             value: characteristics.for_fried_dishes,
-            children: [],
             result: products.peroni_nastro_azzurro,
           },
         ],
@@ -84,12 +76,10 @@ const schema = createSchema<Decision, Product>([
         children: [
           {
             value: characteristics.good_for_driving,
-            children: [],
             result: products.peroni_nastro_azzurro_00,
           },
           {
             value: characteristics.structured_light,
-            children: [],
             result: products.kozel_dark,
           },
         ],
@@ -99,12 +89,10 @@ const schema = createSchema<Decision, Product>([
         children: [
           {
             value: characteristics.malted_gluten_free,
-            children: [],
             result: products.peroni_senza_glutine,
           },
           {
             value: characteristics.malted,
-            children: [],
             result: products.peroni,
           },
         ],
@@ -119,12 +107,10 @@ const schema = createSchema<Decision, Product>([
         children: [
           {
             value: characteristics.caramel,
-            children: [],
             result: products.peroni_gran_riserva_rossa,
           },
           {
             value: characteristics.honey,
-            children: [],
             result: products.kozel_lager,
           },
         ],
@@ -134,12 +120,10 @@ const schema = createSchema<Decision, Product>([
         children: [
           {
             value: characteristics.sweet_and_structured,
-            children: [],
             result: products.kozel_dark,
           },
           {
             value: characteristics.good_for_driving,
-            children: [],
             result: products.peroni_nastro_azzurro_00,
           },
         ],

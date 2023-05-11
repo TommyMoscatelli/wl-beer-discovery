@@ -6,11 +6,12 @@ import ScreenBody from '../common/ScreenBody';
 import Footer from '../common/Footer';
 import Button from '../common/Button';
 import useResult from '../../lib/decision-tree/hooks/useResult';
+import { Product } from '../../data/types';
 
 export default function Step4() {
   const { t } = useTranslation('discovery');
 
-  const product = useResult(['event', 'taste', 'characteristic']);
+  const product = useResult<Product>(['event', 'taste', 'characteristic']);
 
   function navigateDeepLink(link: string) {
     // @ts-ignore

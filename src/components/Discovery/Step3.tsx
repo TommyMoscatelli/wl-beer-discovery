@@ -6,10 +6,11 @@ import ScreenBody from '../common/ScreenBody';
 import ChoiceList from '../common/ChoiceList';
 import Fact from '../common/Fact';
 import useStep from '../../lib/decision-tree/hooks/useStep';
+import { Decision } from '../../data/types';
 
 export default function Step3() {
   const { t } = useTranslation('discovery');
-  const characteristics = useStep(['event', 'taste']);
+  const characteristics = useStep<Decision>(['event', 'taste']);
 
   if (!characteristics) {
     throw new Error('An error as occurred fetching characteristics');

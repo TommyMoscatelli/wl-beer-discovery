@@ -6,10 +6,11 @@ import Fact from '../common/Fact';
 import ScreenBody from '../common/ScreenBody';
 import ChoiceList from '../common/ChoiceList';
 import useStep from '../../lib/decision-tree/hooks/useStep';
+import { Decision } from '../../data/types';
 
 export default function Step2() {
   const { t } = useTranslation('discovery');
-  const tastes = useStep(['event']);
+  const tastes = useStep<Decision>(['event']);
 
   if (!tastes) {
     throw new Error('An error as occurred fetching tastes');

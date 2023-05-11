@@ -1,11 +1,11 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import decisionTree from '../../../data/decisionTree';
+import { useContext } from 'react';
+import { getDecisionTreeContext } from '../DecisionTreeProvider';
 
-export default function useResult(
-  paramKeys: string[]
-): ReturnType<typeof decisionTree.getResult> | null {
+export default function useResult<K>(paramKeys: string[]): K | null {
   const urlParams = useParams();
   const navigate = useNavigate();
+  const decisionTree = useContext(getDecisionTreeContext());
 
   const paramValues = paramKeys.map((key) => urlParams[key]);
 
@@ -13,7 +13,7 @@ export default function useResult(
     navigate('/');
   }
 
-  let result = null;
+  let result: K | null = null;
 
   try {
     result = decisionTree.getResult(paramValues as string[]);

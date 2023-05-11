@@ -2,6 +2,10 @@ import { Outlet, useLocation, useSearchParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import decisionTree from './data/decisionTree';
+import createDecisionTreeProvider from './lib/decision-tree/DecisionTreeProvider';
+
+const DecisionTreeProvider = createDecisionTreeProvider(decisionTree);
 
 const pageVariants = {
   initial: {
@@ -31,16 +35,18 @@ function App() {
   }, [i18n, searchParams]);
 
   return (
-    <motion.div
-      className="max-w-2xl mx-auto relative"
-      key={pathname}
-      initial="initial"
-      animate="in"
-      variants={pageVariants}
-      transition={pageTransition}
-    >
-      <Outlet />
-    </motion.div>
+    <DecisionTreeProvider>
+      <motion.div
+        className="max-w-2xl mx-auto relative"
+        key={pathname}
+        initial="initial"
+        animate="in"
+        variants={pageVariants}
+        transition={pageTransition}
+      >
+        <Outlet />
+      </motion.div>
+    </DecisionTreeProvider>
   );
 }
 

@@ -1,14 +1,21 @@
 import { useTranslation } from 'react-i18next';
-import { events } from './decisionTree';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import ScreenContainer from '../common/ScreenContainer';
 import ScreenBody from '../common/ScreenBody';
 import ChoiceList from '../common/ChoiceList';
 import Fact from '../common/Fact';
+import useStep from '../../lib/decision-tree/hooks/useStep';
+import { Decision } from '../../data/types';
 
 export default function Step1() {
   const { t } = useTranslation('discovery');
+
+  const events = useStep<Decision>();
+
+  if (!events) {
+    throw new Error('An error as occurred fetching events');
+  }
 
   return (
     <ScreenContainer>

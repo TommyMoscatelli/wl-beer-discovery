@@ -10,7 +10,7 @@ export default {
     image: 'img/product/peroni_nastro-azzurro_stile-capri.png',
   },
   peroni_cruda: {
-    id: '6143505e76d72000637c18a3 ',
+    id: '6143505e76d72000637c18a3',
     slug: 'peroni_cruda',
     image: 'img/product/peroni_cruda.png',
   },
